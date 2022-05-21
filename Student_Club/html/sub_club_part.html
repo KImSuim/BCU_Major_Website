@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>컴퓨터소프트웨어과</title>
+    <title>전공동아리</title>
     <link rel="stylesheet" href="/Student_Club/css/sub_club_part.css">
-    <link rel="stylesheet" href="/Introduce/css/sub_greeting_part.css">
-    <script src="/templates/JS/includeHTML.js"></script>
+    <script src="/templates/js/includeHTML.js"></script>
 </head>
+
 <body>
-    <div w3-include-html="/templates/html/navbar_(modify).html"></div>
+    <!--navbar-->
+    <div w3-include-html="/templates/html/navbar.html"></div>
 
     <div class="club_container">
-        <div class="club_top">
+        <div class="club_top">전공동아리</div>
+        <hr class="club_hr">
+        <br>
+        <!-- <div class="club_top">
             <div id="club">전공동아리</div>
-        </div>
+        </div> -->
         
         <div class="club_img">
-            <img class="club_school_img" src="/img/comon이미지.JPG" alt="컴온 이미지 없음">
-            <img class="club_school_img" src="/img/로직 이미지.JPG" alt="로직 이미지 없음">
-            <img class="club_school_img" src="/img/알고리즘.JPG" alt="알고리즘 이미지 없음">
-            <img class="club_school_img" src="/img/업그레이드 이미지.JPG" alt="업그레이드 이미지 없음">
+            <img class="club_school_img" src="/img/comon이미지.jpg" alt="컴온 이미지 없음">
+            <img class="club_school_img" src="/img/로직 이미지.jpg" alt="로직 이미지 없음">
+            <img class="club_school_img" src="/img/알고리즘 이미지.jpg" alt="알고리즘 이미지 없음">
+            <img class="club_school_img" src="/img/업그레이드 이미지.jpg" alt="업그레이드 이미지 없음">
         </div>
 
         <table border="2" class="club_table">
             <thead>
-                <tr>
-                    <th>번호</th>
-                    <th>동아리 이름</th>
-                    <th>소개 글</th>
+                <tr class="big_title">
+                    <th class="big_title-th">번호</th>
+                    <th class="big_title-th">동아리 이름</th>
+                    <th class="big_title-th">소개 글</th>
                 </tr>
             </thead>
 
@@ -63,7 +67,7 @@
             </tbody>
         </table>
     </div>
-
+    <br><br><br><br><br>
 
 <script>
     includeHTML();
