@@ -1,0 +1,192 @@
+@import url("/templates/css/navbar_\(modify\).css");
+
+/* section */
+.section {
+    background-color: #F6FAEC;
+    padding-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+    /*margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 2%;*/
+}
+
+/* header */
+.description {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.department {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+/* navbar */
+.navbar_menu {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: flex;
+    font-weight: 600;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.navbar_menu_item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar_menu_item:hover {
+    color: #FF8F40;
+}
+
+.thick_hr {
+    border: none;
+    background-color: #feb546;
+    height: 4px;
+}
+
+/* greetings */
+.greetings_description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greetings_box {
+    width: 70%;
+}
+
+#greetings {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.hello {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.welcome {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.welcome mark {
+    background-color: #F6FAEC;
+    color: #FF8F40;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.greetings_description img {
+    padding-top: 30px;
+}
+
+/* .description_bottom{
+    display: flex;
+    padding-top: 20px;
+}
+.description_bottom img {
+    padding-right: 30px;
+} */
+
+/* Educational Goals/Vision */
+#education_vision {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 75px;
+    padding-bottom: 5px;
+    padding-right: 10px; 
+    /* text-align: right; */
+}
+
+.educational_goals {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: #FF8F40;
+}
+
+.educational_goals_description {
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+.goals {
+    width: 95%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+    margin-left: 25px;
+    
+}
+.big_title{
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+.big_title-th{
+    height: 35px;
+    background-color: #e0efb9;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.first_td {
+    width: 130px;
+    border: 2px solid white;
+}
+
+.second_td {
+    width: 180px;
+    border: 2px solid white;
+}
+
+.third_td {
+    padding-left: 10px;
+    text-align: left;
+    border: 2px solid white;
+
+}
+
+/* Career after graduation */
+#future {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 110px;
+    padding-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 5px;
+    color: #FF8F40;
+}
+
+ul {
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+}

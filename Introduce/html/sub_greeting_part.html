@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인사 글</title>
+    <link rel="stylesheet" href="/Introduce/css/sub_greeting_part.css">
+    <script src="/templates/js/includeHTML.js"></script>
+</head>
+
+<body>
+    <!--navbar-->
+    <div w3-include-html="/templates/html/navbar_(modify).html"></div>
+
+    <!--section-->
+    <section class="section">
+        <!-- header -->
+        <div class="description">디지털 정보화로 지식사회를 만들어가는</div>
+        <div class="department">컴퓨터소프트웨어학과</div>
+
+        <!-- navbar -->
+        <nav class="navbar_menu">
+            <a class="navbar_menu_item" href="#greetings">인사말</a>
+            <a class="navbar_menu_item" href="#education_vision">교육목표/비전</a>
+            <a class="navbar_menu_item" href="#future">졸업 후 진로</a>
+        </nav>
+        <hr class="thick_hr">
+        
+        <!-- greetings -->
+        <div class="greetings_description">
+            <div class="greetings_box">
+                <div id="greetings">인사말</div>
+                <hr>
+                <div class="description_top">
+                    <div class="hello">안녕하십니까?</div>
+                    <div class="welcome"><mark>부천대학교 컴퓨터소프트웨어학과</mark>에 오신 것을 환영합니다.</div>
+                    <div class="description">
+                        정보통신 기술(ICT)과 기본산업의 융합을 통해 새로운 가치를 창조하는 4차산업시대에서 <br>
+                        빅데이터, 사물인터넷, 센서, 인공지능 등의 다양한 융복합 기술은 가장 근간이 되는<br>
+                        핵심 학문 분야로 필수적이고 유망한 분야입니다.<br>
+                        컴퓨터 소프트웨어학과는 컴퓨터를 비롯한 다양한 디지털 기기에 대한 하드웨어 및 <br>
+                        소프트웨어 개발을 위한 기초 및 응용 이론과 기술에 관해 교육합니다.<br>
+                    </div>
+                </div>
+            </div>
+            <img src="/img/한항길(배경없음).png" alt="몽당 한항길 선생" width="300px" height="300px">
+        </div>
+
+        <!-- <div class="description_bottom">
+            <img src="소개글-인사글.jpg" alt="학생 이미지"  width="330px" height="200px">
+            <div class="description">
+                컴퓨터 소프트웨어학과는 컴퓨터를 비롯한 다양한 디지털 기기에 대한 <br>
+                하드웨어 및 소프트웨어 개발을 위한 기초 및 응용 이론과 <br>
+                기술에 관해 교육합니다.
+            </div>
+        </div> -->
+
+        <!-- Educational Goals/Vision -->
+        <div id="education_vision">교육목표/비전</div>
+        <hr>
+        <div class="educational_goals">교육목표</div>
+        <div class="educational_goals_description">컴퓨터소프트웨어 개발자로서 창의적 문제 해결 능력과 전인격적 인성을 포함한 평생학습 역량을 갖춘 전문가 교육을 목표로 한다.
+        </div>
+        <table border="2" class="goals">
+            <thead>
+                <tr class="big_title">
+                    <th class="big_title-th">인재양성유형</th>
+                    <th class="big_title-th">직무</th>
+                    <th class="big_title-th">직업개요</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="first_td">응용소프트웨어 개발자</td>
+                    <td class="second_td">웹 프로그램 개발</td>
+                    <td class="third_td">
+                        웹 기반의 어플리케이션 개발을 위해 시스템 분석 방법론을 활용하여
+                        개발에 필요한 요소 분석 수행
+                    </td>
+                </tr>
+                <tr>
+                    <td class="second_td">C/S 프로그램 개발</td>
+                    <td class="third_td">
+                        클라이언트/서버 기반의 응용 어플리케이션 개발을 위해 시스템 분석 방법론을 활용하여
+                        개발에 필요한 요소 분석 수행
+                    </td>
+                </tr>
+                <tr>
+                    <td class="second_td">모바일 프로그램 개발</td>
+                    <td class="third_td">
+                        이동통신 서비스를 이동할 수 있는 휴대 가능한 단말 장치에서 구동되는
+                        클라이언트/서버 기반의 어플리케이션 개발을 위해 시스템 분석 방법론을 활용하여
+                        개발에 필요한 요소 분석 수행
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Career after graduation -->
+        <div id="future">졸업 후 진로</div>
+        <hr>
+        <div class="title">취업 자격증</div>
+        <ul>
+            <li>정보처리산업기사/전자계산기조직응용산업기사</li>
+            <li>사무자동화 산업기사, 정보기술산업기사</li>
+            <li>컴퓨터 활용능력 1·2급, 실기교사자격증</li>
+            <li>MCSE(Microsoft Certified System Engineer), OCP(Oracle Certified Professional)등 전산관련 자격증</li>
+        </ul>
+        <div class="title">취업분야</div>
+        <ul>
+            <li>C/S 기반 프로그램 개발자</li>
+            <li>web 기반 프로그램 개발자</li>
+            <li>모바일 기반 프로그램 개발자</li>
+            <li>DB 설계 및 관리자</li>
+            <li>시스템 프로그램 개발자</li>
+            <li>정보보안분야 개발자</li>
+            <li>게임개발자 등 컴퓨터 및 네트워크를 사용하는 모든 직종에 취업이 가능</li>
+        </ul>
+    </section>
+
+    <!--footed-->
+</body>
+<script>
+    includeHTML();
+</script>
+
+</html>

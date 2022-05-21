@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: #F6FAEC;
+}
+
+/* logo */
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    height: 70px;
+}
+.logo_container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    /* background-color: pink; */
+}
+.bucheon_logo{
+    width: 60px;
+    height: 60px;
+}
+#major_name{
+    font-size: 20px;
+    width: 190px; /*넓이를 줌으로써 크기 고정*/
+
+}
+
+/* menubar */
+.menubar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+/* overlap */
+.menubar_menu{
+    font-weight: 600;
+    font-size: 17px;
+}
+.menubar_menu:hover {
+    /*border-bottom: 3px solid #feb546;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-bottom:  solid underline #feb546 3px;*/
+    text-decoration: 4px solid underline #feb546 ;
+}
+.menubar_menu_item{
+    font-weight: 600;
+}
+
+.menubar_menu_item:hover {
+    color: #FFC715;
+}
+
+/* introduce */
+#introduce {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    justify-content: space-between;
+    color:#5c5c5c;
+    width: 230px;
+}
+
+#introduce_box:hover #introduce {
+    display: flex;
+}
+
+/* education */
+#education {
+    display: none;
+    position: absolute;
+    color:#5c5c5c;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+#education_box:hover #education {
+    display: flex;
+}
+
+/* student activity */
+#activity {
+    display: none;
+    position: absolute;
+    color:#5c5c5c;
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 230px;
+}
+
+#student_box:hover #activity {
+    display: flex;
+}
+
+/* department notice */
+#major_calendar {
+    display: none;
+    position: absolute;
+    color:#5c5c5c;
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 230px;
+}
+
+#major_box:hover #major_calendar {
+    display: flex;
+}
+
+/* employment information */
+#employment_information {
+    display: none;
+    position: absolute;
+    color:#5c5c5c;
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 230px;
+}
+
+#information_box:hover #employment_information {
+    display: flex;
+}

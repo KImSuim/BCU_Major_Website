@@ -1,0 +1,104 @@
+@import url("/templates/css/navbar_\(modify\).css");
+
+/* section */
+section {
+    background-color: #F6FAEC;
+    padding-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+    /*margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 2%;*/
+}
+
+.procedure {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.thick_hr {
+    border: none;
+    background-color: #feb546;
+    height: 4px;
+}
+
+/* Curriculum Table */
+
+.curriculum_table {
+    width: 95%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    /* border: 2px solid white; */
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    margin-left: 25px;
+    border-left: none;
+    border-right: none;
+    
+}
+/* .curriculum_table thead tr{
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+.curriculum_table th {
+    height: 35px;
+    background-color: #e0efb9;
+    border: 2px solid white;
+
+} */
+.table_title {
+    background-color: #e0efb9;
+    border: 2px solid white;
+    border-left: none;
+    width:10%;
+}
+
+.S-S_th, .Fs-s-th {
+    width: 130px;
+    border: 2px solid white;
+    background-color: #e0efb9;
+}
+
+.S-E_th, .Fs-e-th {
+    width: 130px;
+    border: 2px solid white;
+    background-color: #DAE3F3;
+}
+.table_detail {
+    height: 70px;
+    border: 2px solid white;
+    width: 30px;
+}
+
+/*Convergence Track*/
+.convergence_track{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.convergence {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 75px;
+}
+.track {
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+}
+.track_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 5px;
+    color: #FF8F40;
+    margin-top: -20px;
+}
+.track_detail {
+    margin-top: -1px;
+    margin-left: -1px;
+}
