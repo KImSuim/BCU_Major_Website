@@ -1,0 +1,58 @@
+@import url("/templates/css/navbar.css");
+@import url("/templates/css/footer.css");
+
+.council_container {
+    /* min-width: 320px;
+    max-width: 800px; */
+    /* padding: 50px; */
+    /* margin: 0; */
+    /* margin-left: 170px; */
+    padding-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.council_top {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.council_sub {
+    font-size: 20px;
+    color: rgb(125, 125, 125);
+    margin-left: 50px;
+}
+
+.council_hr {
+    border: none;
+    background-color: #feb546;
+    height: 4px;
+    border-color: 2px;
+}
+
+.council_box_1, .council_box_2, .council_box_3,
+.council_box_4, .council_box_5, .council_box_6, 
+.council_box_7, .council_box_8, .council_box_9, 
+.council_box_10 {
+    margin-bottom: 50px;
+}
+
+.council_img {
+    margin: 20px 40px;
+    width: 180px;
+    height: 180px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+#council_name {
+    color: rgb(89, 89, 89);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#council_all {
+    display: block;
+    float: left;
+    text-align: center;
+}
