@@ -1,6 +1,10 @@
 @import url("/templates/css/navbar.css");
 @import url("/templates/css/footer.css");
 
+.council_section{
+    height: 100vh;
+    width: 100%;
+}
 .council_container {
     /* min-width: 320px;
     max-width: 800px; */
