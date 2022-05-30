@@ -2,9 +2,19 @@
 @import url("/templates/css/footer.css");
 
 body {
-    height: 500vh;
+    /* height: 500vh; */
 }
+/* main */
+.main{
+    display: flex;
+}
+/* left-box */
+.left-box{
 
+    width: 900px;
+    /*width: 70%*/
+}
+/* slider */
 /*GLOBALS*/
 * {
     margin: 0;
@@ -163,4 +173,63 @@ body {
     -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
     -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
     transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+}
+
+/* pop-up_menu */
+.pop-up_menu{
+    width: 845px;
+    height: 50px;
+    /* position: relative;
+    overflow: hidden; */
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    border: 4px solid #feb546;
+}
+
+/* right-box */
+.right-box{
+    width: 630px;
+    /*width: 45%;*/
+}
+/* major */
+.major_notice{
+    width: 600px;
+    height: 140px;
+    margin-top: 20PX;
+    /* position: relative;
+    overflow: hidden; */
+    /* margin: 20px; */
+    background-color: white;
+    border: 4px solid #feb546;
+}
+
+/* employment */
+.employment_notice{
+    width: 600px;
+    height: 140px;
+    margin-top: 15PX;
+    /* position: relative;
+    overflow: hidden; */
+    /* margin: 20px; */
+    background-color: white;
+    border: 4px solid #feb546;
+}
+/* calendar */
+.calendar{
+    width: 600px;
+    height: 245px;
+    margin-top: 15PX;
+    /* position: relative;
+    overflow: hidden; */
+    /* margin: 20px; */
+    background-color: white;
+    border: 4px solid #feb546;
+    display: flex;
+}
+.month_calendar{
+    width: 400px;
+}
+.list{
+    width: 200px;
 }
