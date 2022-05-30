@@ -6,16 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="includeHTML.js"></script>
+    <link rel="stylesheet" href="/Main/css/main.css">
+    <script src="/Main/js/main.js" defer></script>
+    <script src="/templates/js/includeHTML.js"></script>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav include-html="templates/html/navbar_(modify).html"></nav>
+    <div w3-include-html="/templates/html/navbar.html"></div>
+    <!-- slider -->
+    <div id="slider-wrap">
+        <ul id="slider">
+            <li>
+                <div class="slider_title"> 
+                    <h2 class="slider_title_h2">디지털 정보화로 지식사회를 만들어가는</h2>
+                    <h3 class="slider_title_h3">컴퓨터소프트웨어과</h3>
+                </div>
+                <img src="/img/홈페이지_학교_사진.PNG" class="silder_img">
+            </li>
+    
+            <li>
+                <div class="slider_title"> 
+                    <h2 class="slider_title_h2">디지털 정보화로 지식사회를 만들어가는</h2>
+                    <h3 class="slider_title_h3">컴퓨터소프트웨어과</h3>
+                </div>
+                <img src="/img/홈페이지_학교_관련_사진2.PNG" class="silder_img">
+            </li>
+    
+            <li>
+                <div class="slider_title"> 
+                    <h2 class="slider_title_h2">디지털 정보화로 지식사회를 만들어가는</h2>
+                    <h3 class="slider_title_h3">컴퓨터소프트웨어과</h3>
+                </div>
+                <img src="/img/홈페이지_학교_관련_사진1.PNG" class="silder_img">
+            </li>
+    
+            <li>
+                <div class="slider_title"> 
+                    <h2 class="slider_title_h2">디지털 정보화로 지식사회를 만들어가는</h2>
+                    <h3 class="slider_title_h3">컴퓨터소프트웨어과</h3>
+                </div>
+                <img src="/img/홈페이지_동아리활동_사진.PNG" class="silder_img">
+            </li>
+    
+            <li>
+                <div class="slider_title"> 
+                    <h2 class="slider_title_h2">디지털 정보화로 지식사회를 만들어가는</h2>
+                    <h3 class="slider_title_h3">컴퓨터소프트웨어과</h3>
+                </div>
+                <img src="/img/홈페이지_멘토링_사진.PNG" class="silder_img">
+            </li>
+        </ul>
+    
+        <div class="slider-btns" id="next"><span>▶</span></div>
+        <div class="slider-btns" id="previous"><span>◀</span></div>
+    
+        <div id="slider-pagination-wrap">
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+
 
     <!--footed-->
-    <div w3-include-html="/templates/html/footer.html"></div>
+    <!-- <div w3-include-html="/templates/html/footer.html"></div> -->
 </body>
 <script>
     includeHTML();
