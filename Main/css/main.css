@@ -19,9 +19,10 @@ body {
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
-
+a {
+    text-decoration: none;
+}
 #slider-wrap {
     width: 850px;
     height: 500px;
@@ -42,6 +43,7 @@ body {
     position: relative;
     width: 800px;
     height: 400px;
+    list-style: none;
 }
 
 #slider-wrap ul#slider li>div {
@@ -187,10 +189,29 @@ body {
     border: 4px solid #feb546;
 }
 
+.pop_up_text {
+    font-family: "Noto Sans KR",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(64, 64, 64);
+    margin: 10px 10px;
+    margin-left: 95px;
+    margin-right: 55px;
+}
+
+.pop_up_bar {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px 5px;
+    margin-left: 50px;
+    color: #feb546;
+}
+
 /* right-box */
 .right-box{
     width: 630px;
     /*width: 45%;*/
+    font-family: "Noto Sans KR",sans-serif;
 }
 /* major */
 .major_notice{
@@ -203,6 +224,71 @@ body {
     background-color: white;
     border: 4px solid #feb546;
 }
+
+.major_sub1 {
+    margin: 10px;
+}
+
+.major_sub2_list {
+    width: 100px;
+    text-align: right;
+    color: rgb(139, 139, 139);
+    /* background-color: pink; */
+}
+
+.major_sub1_list {
+    margin-left: 30px;
+    /* background-color: pink; */
+    width: 450px;
+    font-weight: 600;
+    color:#696969;
+}
+.major_list_hr {
+    border-bottom: 1px solid silver;
+}
+
+
+.major_big_list {
+    display: flex;
+}
+
+.major_list_1 {
+    list-style: none;
+}
+
+.major_text {
+    font-weight: 600;
+    font-size: 18px;
+    float: left;
+}
+
+.major_plus {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(110, 110, 110);
+    margin-left: 457px;
+}
+
+.major_hr {
+    border: 0;
+    height: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #000000;
+}
+
+
+.major_list {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.major_list_1 {
+    font-size: 12px;
+    line-height: 30px;
+    
+}
+
 
 /* employment */
 .employment_notice{
