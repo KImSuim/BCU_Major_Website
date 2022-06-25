@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>부천대학교</title>
     <link rel="stylesheet" href="/Main/css/main.css">
+    <link rel="stylesheet" href="/Main/css/week.css">
     <script src="/Main/js/main.js" defer></script>
     <script src="/templates/js/includeHTML.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="/Main/js/week.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="autoReload();">
     <!-- navbar -->
     <div w3-include-html="/templates/html/navbar.html"></div>
 
@@ -76,10 +79,10 @@
             <!-- pop-up_menu -->
             <div class="pop-up_menu">
                 <a href="https://www.bc.ac.kr/home/homeIndex.do" class="pop_up_text">부천대 홈</a>
-            <div class="pop_up_bar">|</div>
-            <a href="https://portal.bc.ac.kr/main/indx/index.do" class="pop_up_text">포털사이트</a>
-            <div class="pop_up_bar">|</div>
-            <a href="https://dept.bc.ac.kr/now/index.do" class="pop_up_text">BC NOW</a>
+                <div class="pop_up_bar">|</div>
+                <a href="https://portal.bc.ac.kr/main/indx/index.do" class="pop_up_text">포털사이트</a>
+                <div class="pop_up_bar">|</div>
+                <a href="https://dept.bc.ac.kr/now/index.do" class="pop_up_text">BC NOW</a>
             </div>
         </div>
 
@@ -137,15 +140,138 @@
 
             <!-- calendar -->
             <div class="calendar">
-                <div class="month_calendar">
-
-                </div>
+                <table align="center" id="calendar">
+                    <tr>
+                        <td>
+                            <a id="before" href="javascript:beforem()"></a>
+                        </td>
+                        <td colspan="4" align="center">
+                            <div id="yearmonth"></div>
+                        </td>
+                        <td>
+                            <a id="after" href="javascript:afterm()">></a>
+                        </td>
+                        <td>
+                            <a href="javascript:thisMonth()">오늘</a>
+                        </td>
+                    </tr>
+                    <tr class="week">
+                        <td width="14%"> 월 </td>
+                        <td width="14%"> 화 </td>
+                        <td width="14%"> 수 </td>
+                        <td width="14%"> 목 </td>
+                        <td width="14%"> 금 </td>
+                        <td width="14%">
+                            <font color="#009de0">토</font>
+                        </td>
+                        <td width="14%">
+                            <font color="#ed5353">일</font>
+                        </td>
+                    </tr>
+                </table>
                 <div class="list">
+                    <div id="calTitle"> 이번 달 일정
+                        <!-- <script>
+                            var calTitle = document.getElementById("calTitle"); //  년도와 월 출력할곳
+                            calTitle.innerHTML = today.getFullYear() + "년 " + (today.getMonth() + 1) + "월 일정"; //년도와 월 출력
 
+                            // var calTitle = document.getElementById("calTitle"); //  년도와 월 출력할곳
+                            // calTitle.innerHTML = today.getFullYear() + "년 " + (thisMonth() + 1) + "월 일정"; //년도와 월 출력
+                            // if (today.getMonth() + 1 == 5) {
+                            //     var calTitle = document.getElementById("calTitle"); //  년도와 월 출력할곳
+                            //     calTitle.innerHTML = today.getFullYear() + "년 " + (thisMonth() + 1) + "월 일정"; //년도와 월 출력
+                            // }
+                            // if (today.getMonth() + 1 == 6) {
+                            //     var calTitle = document.getElementById("calTitle"); //  년도와 월 출력할곳
+                            //     calTitle.innerHTML = today.getFullYear() + "년 " + (thisMonth() + 1) + "월 일정"; //년도와 월 출력
+                            // }
+                        </script> -->
+                    </div>
+                    <div id="calSumList">
+                        <script>
+                            if (today.getMonth() + 1 == 2) {
+                                var s = "";
+                                s += "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                                s += "<br>14(월) ~ 18(금) 1학기 미등록 휴학 기간";
+                                s += "<br>14(월) ~ 28(월) 1학기 등록금 고지서 출력 기간";
+                                s += "<br>17(목) 2021학년도 전기 학위수여식";
+                                s += "<br>21(월) ~ 22(화) (재학생)전공과목 수강신청 기간 21일 10:00~ 22일 20:00";
+                                s += "<br>21(월) ~ 28(월) 재학생 등록기간";
+                                s += "<br>22(화) 2022학년도 입학식 및 신입생 OT";
+                                s += "<br>23(수) (신입생)전공과목 수강신청 기간 10:00~20:00";
+                                s += "<br>24(목) ~ 28(월) 교양 및 전공과목 수강신청 기간 24일 14:00~ 28일 24:00";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 3) {
+                                var s = "";
+                                s += "2(수) 1학기 개강";
+                                s += "<br>2(수) ~ 7(월) 수강신청 정정기간 2일 10:00~ 7일 17:00 3월 8일(화)은 학과사무실(조교) 통해 진행가능";
+                                s += "<br>29(화) 수업일수 1/4";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 4) {
+                                var s = "";
+                                s += "20(수) ~ 26(화) 중간평가";
+                                s += "<br>25(월) 수업일수 2/4";
+                                s += "<br>28(목) 개교기념일";
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 5) {
+                                var s = "";
+                                s += "24(화) 수업일수 3/4";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 6) {
+                                var s = "";
+                                s += "15(수) ~ 21(화) 기말평가";
+                                s += "<br>21(화) 수업 종료";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 7) {
+                                var s = "";
+                                s += "4(월) ~ 5(화) 하계 계절학기 수강신청 기간";
+                                s += "<br>6(수) ~ 26(화) 하계 계절학기 수업 기간";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                            else if (today.getMonth() + 1 == 8) {
+                                var s = "";
+                                s += "1(월) ~ 5(금) 하계 단체 휴업(학과사무실 운영X)";
+                                document.getElementById("calSumList").innerHTML = s;
+                                // var calSumList = document.getElementById("calSumList"); //  년도와 월 출력할곳
+                                // calSumList.innerHTML = "3(목) ~ 3.16(수)  1학기 국가장학금 2차 신청 기간";
+                            }
+                        </script>
+                        <!-- <a href="javascript:listPrint()"></a> -->
+                    </div>
                 </div>
+                <!-- <table class="list">
+                    <tr>
+                        <td>
+                            <a id="calTitle" href="javascript:listPrint()">aa</a>
+                        </td>
+                    </tr>
+                    <th>
+                        <td>
+                            <a id="calSumList" href="javascript:listPrint()">sss</a>
+                        </td>
+                    </th>
+                </table> -->
             </div>
+
         </div>
     </div>
+
 
     <!--footed-->
     <div w3-include-html="/templates/html/footer.html"></div>
