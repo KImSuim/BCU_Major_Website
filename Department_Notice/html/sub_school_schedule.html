@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +20,134 @@
         <div class="senier-project">학과일정</div>
         <hr class="thick_hr">
         <br>
-    </section>
 
+        <!-- calendar -->
+        <!-- year -->
+        <div class="year">
+            <form>
+                <a href="https://dept.bc.ac.kr/computer-software/schedule/schedule.do?mode=userList&year=2021">
+                    <input type="button" style="width:25pt;height:25pt;font-size: 25px;" value="<">
+                </a>
+            </form>
+
+            <span class="yearNum">2022</span>
+
+            <form>
+                <a href="https://dept.bc.ac.kr/computer-software/schedule/schedule.do?mode=userList&year=2023">
+                    <input type="button" style="width:25pt;height:25pt;font-size: 25px;" value=">">
+                </a>
+            </formclass=>
+        </div>
+
+        <!-- month,day -->
+        <table border="2" class="schedule">
+            <tbody>
+                <!-- 2월 -->
+                <tr>
+                    <td rowspan="9" class="first_td">2월</td>
+                    <td class="second_td">3(목) ~ 3.16(수)</td>
+                    <td class="third_td">1학기 국가장학금 2차 신청 기간</td>
+                <tr>
+                    <td class="second_td">14(월) ~ 18(금)</td>
+                    <td class="third_td">1학기 미등록 휴학 기간</td>
+                </tr>
+                <tr>
+                    <td class="second_td">14(월) ~ 28(월)</td>
+                    <td class="third_td">1학기 등록금 고지서 출력 기간</td>
+                </tr>
+                <tr>
+                    <td class="second_td">17(목)</td>
+                    <td class="third_td">2021학년도 전기 학위수여식</td>
+                </tr>
+                <tr>
+                    <td class="second_td">21(월) ~ 22(화)</td>
+                    <td class="third_td">(재학생)전공과목 수강신청 기간 21일 10:00~ 22일 20:00</td>
+                </tr>
+                <tr>
+                    <td class="second_td">21(월) ~ 28(월)</td>
+                    <td class="third_td">재학생 등록기간</td>
+                </tr>
+                <tr>
+                    <td class="second_td">22(화)</td>
+                    <td class="third_td">2022학년도 입학식 및 신입생 OT</td>
+                </tr>
+                <tr>
+                    <td class="second_td">23(수)</td>
+                    <td class="third_td">(신입생)전공과목 수강신청 기간 10:00~20:00</td>
+                </tr>
+                <tr>
+                    <td class="second_td">24(목) ~ 28(월)</td>
+                    <td class="third_td">교양 및 전공과목 수강신청 기간 24일 14:00~ 28일 24:00</td>
+                </tr>
+                <!-- 3월 -->
+                <tr>
+                    <td rowspan="3" class="first_td">3월</td>
+                    <td class="second_td">2(수)</td>
+                    <td class="third_td">1학기 개강</td>
+                </tr>
+                <tr>
+                    <td class="second_td">2(수) ~ 7(월)</td>
+                    <td class="third_td">수강신청 정정기간 2일 10:00~ 7일 17:00 3월 8일(화)은 학과사무실(조교) 통해 진행가능</td>
+                </tr>
+                <tr>
+                    <td class="second_td">29(화)</td>
+                    <td class="third_td">수업일수 1/4</td>
+                </tr>
+                <!-- 4월 -->
+                <tr>
+                    <td rowspan="3" class="first_td">4월</td>
+                    <td class="second_td">20(수) ~ 26(화)</td>
+                    <td class="third_td">중간평가</td>
+                </tr>
+                <tr>
+                    <td class="second_td">25(월)</td>
+                    <td class="third_td">수업일수 2/4</td>
+                </tr>
+                <tr>
+                    <td class="second_td">28(목)</td>
+                    <td class="third_td">개교기념일</td>
+                </tr>
+                <!-- 5월 -->
+                <tr>
+                    <td class="first_td">5월</td>
+                    <td class="second_td">24(화)</td>
+                    <td class="third_td">수업일수 3/4</td>
+                </tr>
+                <!-- 6월 -->
+                <tr>
+                    <td rowspan="2" class="first_td">6월</td>
+                    <td class="second_td">15(수) ~ 21(화) </td>
+                    <td class="third_td">기말평가</td>
+                </tr>
+                <tr>
+                    <td class="second_td">21(화)</td>
+                    <td class="third_td">수업 종료</td>
+                </tr>
+                <!-- 7월 -->
+                <tr>
+                    <td rowspan="2" class="first_td">7월</td>
+                    <td class="second_td">4(월) ~ 5(화)</td>
+                    <td class="third_td">하계 계절학기 수강신청 기간</td>
+                </tr>
+                <tr>
+                    <td class="second_td">6(수) ~ 26(화)</td>
+                    <td class="third_td">하계 계절학기 수업 기간</td>
+                </tr>
+                <!-- 8월 -->
+                <tr>
+                    <td rowspan="9" class="first_td">8월</td>
+                    <td class="second_td">1(월) ~ 5(금)</td>
+                    <td class="third_td">하계 단체 휴업(학과사무실 운영X)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <!--footed-->
     <div w3-include-html="/templates/html/footer.html"></div>
+
 </body>
 <script>
     includeHTML();
 </script>
+
 </html>

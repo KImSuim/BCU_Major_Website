@@ -11,6 +11,7 @@ section {
     margin-right: 10%;
     margin-top: 2%;*/
     border-bottom: 2.5px siuld;
+    min-height: 210vh;
 }
 
 /*big title*/
@@ -25,4 +26,55 @@ section {
     background-color: #feb546;
     height: 4px;
     border-color: 2px, siuld, aajff;
+}
+
+
+.year {
+    margin-left: 25px;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+}
+.yearNum {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.schedule {
+    width: 95%;
+    height: 1230px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    margin-left: 25px;
+}
+
+.schedule td {
+    height: 50px;
+}
+
+.first_td {
+    width: 150px;
+    border: 2px solid white;
+    background-color: #e0efb9;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.second_td {
+    width: 150px;
+    padding-left: 10px;
+    text-align: left;
+    border: 2px solid white;
+    background-color: #eff6de;
+}
+
+.third_td {
+    padding-left: 10px;
+    text-align: left;
+    border: 2px solid white;
+
 }
