@@ -134,11 +134,11 @@ body {
 #information_box:hover #employment_information {
     display: flex;
 }
-a{
+.menubar a{
     text-decoration: none;
     color: #5c5c5c;
 }
 
-a:hover {
+.menubar a:hover {
     color: #FFC715;
 }
