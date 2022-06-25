@@ -1,0 +1,28 @@
+@import url("/templates/css/navbar.css");
+@import url("/templates/css/footer.css");
+
+/* section */
+section {
+    background-color: #F6FAEC;
+    padding-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+    /*margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 2%;*/
+    border-bottom: 2.5px siuld;
+}
+
+/*big title*/
+.senier-project {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.thick_hr {
+    border: none;
+    background-color: #feb546;
+    height: 4px;
+    border-color: 2px, siuld, aajff;
+}
