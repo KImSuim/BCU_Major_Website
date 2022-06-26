@@ -1,23 +1,15 @@
 @import url("/templates/css/navbar.css");
 @import url("/templates/css/footer.css");
 
-/* section */
-section {
-    background-color: #F6FAEC;
+
+
+.announ_container {
     padding-top: 3%;
     padding-right: 15%;
     padding-left: 15%;
     /*margin-left: 20%;
     margin-right: 10%;
     margin-top: 2%;*/
-    border-bottom: 2.5px siuld;
-}
-
-/*big title*/
-.senier-project {
-    font-size: 40px;
-    font-weight: bold;
-
 }
 
 .thick_hr {
@@ -25,4 +17,117 @@ section {
     background-color: #feb546;
     height: 4px;
     border-color: 2px, siuld, aajff;
+}
+
+.senier-project {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.search {
+    position: relative;
+    width: 75%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #3d3d3d;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.search_icon {
+    position: absolute;
+    width: 17px;
+    top: 10px;
+    right: 5px;
+    margin: 0;
+}
+
+.announ_table {
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-top: 2.5px solid rgb(0, 0, 0);
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+}
+
+.ann_big {
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.ann_big_title {
+    height: 35px;
+    background-color: #e0efb9;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    font-weight: 500;
+}
+
+.ann_one_td {
+    font-family: "Noto Sans KR",sans-serif;
+    width: 50px;
+    height: 70px;
+    color: rgb(67, 67, 67);
+    border-bottom: 1px solid #000000;
+}
+
+.ann_two_td {
+    width: 180px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    font-family: "Noto Sans KR",sans-serif;
+    color: rgb(67, 67, 67);
+}
+
+.ann_thr_td {
+    border-bottom: 1px solid #000000;
+    width: 40px;
+    color: rgb(67, 67, 67);
+}
+
+.ann_four_td {
+    width: 80px;
+    border-bottom: 1px solid #000000;
+    font-family: "Noto Sans KR",sans-serif;
+    color: rgb(67, 67, 67);
+}
+
+.ann_fiv_td {
+    width: 0px;
+    border-bottom: 1px solid #000000;
+    font-family: "Noto Sans KR",sans-serif;
+    color: rgb(67, 67, 67);
+}
+
+.btn_group {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.btn_group button:hover {
+    color: white;
+    background-color: #feb546;
+}
+
+.btn_group button{
+    border: 0;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 33px;
+    border-radius: 4px;
+}
+
+.number_btn {
+    font-weight: 600;
+    font-size: 16px;
 }
