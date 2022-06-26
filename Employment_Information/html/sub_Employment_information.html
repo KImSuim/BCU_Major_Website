@@ -1,25 +1,129 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채용공고</title>
-    <link rel="stylesheet" href="/Employment_Information/css/sub_Employment_information.css">
+    <!-- <link rel="stylesheet" href="recruitment.css"> -->
     <script src="/templates/js/includeHTML.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Employment_Information/css/sub_Employment_information.css">
 </head>
-
 <body>
     <!--navbar-->
     <div w3-include-html="/templates/html/navbar.html"></div>
 
-    <!--section-->
-    <section>
-        <!-- big title -->
-        <div class="senier-project">채용공고</div>
-        <hr class="thick_hr">
-        <br>
-    </section>
+    <div class="rectuitment_section">
+        <div class="rectuitment_container">
+            <!--section-->
+        <section>
+            <!-- big title -->
+            <div class="rectuitment-project">채용공고</div>
+            <hr class="thick_hr">
+            <br>
+        </section>
+    
+        <div class="search">
+            <input type="text" placeholder="검색어 입력">
+            <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    
+        <table border="2" class="rectuitment_table">
+            <thead>
+                <tr class="rect_big">
+                    <td class="rect_big_title">번호</td>
+                    <td class="rect_big_title">제목</td>
+                    <td class="rect_big_title">파일</td>
+                    <td class="rect_big_title">작성자</td>
+                    <td class="rect_big_title">등록일</td>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td class="rect_one_td">274</td>
+                    <td class="rect_two_td">바인테크 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.21</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">273</td>
+                    <td class="rect_two_td">(주)이원헬스케어 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.09</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">272</td>
+                    <td class="rect_two_td">(주)신영와코루 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.09</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">271</td>
+                    <td class="rect_two_td">NH농협은행 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.08</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">270</td>
+                    <td class="rect_two_td">아프리카TV 신입사원 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.03</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">269</td>
+                    <td class="rect_two_td">MECC디자인연구소 2022년 공공데이터 청년인턴 채용</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.03</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">268</td>
+                    <td class="rect_two_td">더모임컴퍼니</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.03</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">267</td>
+                    <td class="rect_two_td">퍼즐원스튜디오</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.03</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">266</td>
+                    <td class="rect_two_td">요꼬가와일렉트로닉스매뉴팩처링(주) 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.06.02</td>
+                </tr>
+                <tr>
+                    <td class="rect_one_td">265</td>
+                    <td class="rect_two_td">(주)소만사 채용 공고</td>
+                    <td class="rect_thr_td"><i class="fa-solid fa-paperclip"></i></td>
+                    <td class="rect_four_td">컴퓨터소프트웨어과</td>
+                    <td class="rect_fiv_td">2022.05.31</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn_group">
+            <!-- 페이지 이동 버튼  -->
+            <button class="btn1"><span class="number_btn">1</span></button>
+            <button class="btn2"><span class="number_btn">2</span></button>
+            <button class="btn3"><span class="number_btn">3</span></button>
+            <button class="btn4"><span class="number_btn">4</span></button>
+            <button class="btn5"><span class="number_btn">5</span></button>
+            <button class="btn6"><span class="number_btn">6</span></button>
+        </div>
+        </div>
+    </div>
 
     <!--footed-->
     <div w3-include-html="/templates/html/footer.html"></div>
@@ -27,4 +131,5 @@
 <script>
     includeHTML();
 </script>
+<script src="https://kit.fontawesome.com/5ef77fbbed.js" crossorigin="anonymous"></script>
 </html>
