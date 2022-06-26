@@ -1,28 +1,179 @@
 @import url("/templates/css/navbar.css");
 @import url("/templates/css/footer.css");
 
-/* section */
-section {
+.graduation_work_container {
+    /* min-width: 320px;
+    max-width: 800px; */
+    /* padding: 50px; */
+    /* margin: 0; */
+    /* margin-left: 170px; */
     background-color: #F6FAEC;
     padding-top: 3%;
     padding-right: 15%;
     padding-left: 15%;
-    /*margin-left: 20%;
-    margin-right: 10%;
-    margin-top: 2%;*/
     border-bottom: 2.5px siuld;
 }
 
-/*big title*/
-.senier-project {
+.graduation_top {
     font-size: 40px;
     font-weight: bold;
 
 }
 
-.thick_hr {
+.graduation_hr {
     border: none;
     background-color: #feb546;
     height: 4px;
     border-color: 2px, siuld, aajff;
+}
+
+/* border */
+.graduation_table {
+    /* width: 1070px; */
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    /* margin-left: 25px; */
+    /* border-left: none;
+    border-right: none; */
+}
+
+.graduation_big_title{
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+.graduation_big_title-th{
+    height: 35px;
+    background-color: #e0efb9;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.graduation_first_td {
+    width: 90px;
+    height: 50px;
+    border: 2px solid white;
+    border-bottom: 2px solid silver;
+    /* border-left: none;
+    border-right: none;
+    color: rgb(79, 77, 77); */
+}
+
+.graduation_second_td {
+    width: 230px;
+    border: 2px solid white;
+    border-bottom: 2px solid silver;
+    text-align: left;
+    /* border-left: none;
+    border-right: none;
+    color: rgb(79, 77, 77); */
+}
+
+.graduation_third_td {
+    padding-left: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-bottom: 2px solid silver;
+    opacity: 0.4;
+    width: 100px;
+    /* border-left: none;
+    border-right: none;
+    color: rgb(79, 77, 77); */
+}
+
+.graduation_fourth_td {
+    color: black;
+    border: 2px solid white;
+    border-bottom: 2px solid silver;
+    width: 180px;
+}
+
+.graduation_fifth_td {
+    color: black;
+    border: 2px solid white;
+    border-bottom: 2px solid silver;
+    width: 180px;
+}
+
+/* input {
+    margin-left: 23px;
+    margin-bottom: 20px;
+    width: 1003px;
+    height: 30px;
+    display: flex;
+} */
+
+#input_box_icon {
+    display: flex;
+    /* background-color: red; */
+    border: none;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.input_box {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    height: 35px;
+    margin-left: 23px;
+    margin-bottom: 25px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.input_text {
+    width: 1010px;
+    height: 20px;
+    border: none;
+    /* background-color: aquamarine; */
+    margin-left: 10px;
+}
+
+.input_text:focus {
+    outline: none;
+}
+
+.input_box_container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #feb546; */
+}
+
+
+.btn_group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: pink; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.btn_group button{
+    border: 0;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 15px;
+    width: 40px;
+    height: 33px;
+    /* border-radius: 4px; */
+}
+
+.btn_group button:hover {
+    color: white;
+    background-color: #feb546;
+}
+
+.number_btn {
+    font-weight: 600;
+    font-size: 18px;
 }
