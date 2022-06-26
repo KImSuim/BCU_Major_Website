@@ -243,10 +243,14 @@ a {
     font-weight: 600;
     color:#696969;
 }
+
+.major_list li a{
+    color: black;
+}
+
 .major_list_hr {
     border-bottom: 1px solid silver;
 }
-
 
 .major_big_list {
     display: flex;
