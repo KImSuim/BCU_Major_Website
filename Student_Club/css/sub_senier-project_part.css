@@ -130,3 +130,8 @@ input {
     font-weight: 600;
     font-size: 16px;
 }
+
+td a {
+    color: black;
+    text-decoration-line: none;
+}
